@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="settings_silence_call_description">Bepaal of het rinkelen moet worden gedempt voor de inkomende oproep. De oproep blijft echter doorgestuurd naar de standaard dialer -app als deze niet wordt geblokkeerd. De activering van deze optie is alleen zinvol als de oproep niet is geblokkeerd.</string>
-    <string name="settings_skip_call_log">Overslaan</string>
-    <string name="settings_skip_call_log_description">Bepaal of de inkomende oproep niet in de oproeplijst moet worden weergegeven. Deze optie mag alleen worden geactiveerd als de oproep niet is goedgekeurd. De oproepen worden nog steeds geregistreerd met het type Blocked_Type.</string>
+    <string name="settings_skip_call_log">Oproeplogboek overslaan</string>
+    <string name="settings_skip_call_log_description">Stelt in of de inkomende oproep niet mag worden weergegeven in het oproeplogboek. Dit moet alleen worden aangevinkt als de oproep niet is toegestaan. Oproepen worden nog steeds gelogd met het type BLOCKED_TYPE.</string>
     <string name="settings_skip_notification">Skip melding overslaan</string>
     <string name="settings_skip_notification_description">Geeft aan of er geen melding zou moeten zijn voor de inkomende oproep over een gemiste oproep. Deze optie mag alleen worden geactiveerd als de oproep niet is goedgekeurd.</string>
     <string name="panic_app_dialog_message">Weet je zeker dat je wilt toestaan om %1$s destructieve paniekacties te activeren ?</string>
@@ -45,7 +45,7 @@
     <string name="messages_text_ttl_hint">tijd</string>
     <string name="messages_text_ttl_helper_text">Hoe lang je het nummer kunt bellen. Modificaties: dagen [d], uren [h], minuten [m]</string>
     <string name="messages_text_ttl_error">7 dagen / 48 uur / 120 minuten</string>
-    <string name="block_main">Blok</string>
+    <string name="block_main">Alle nkomende oproepen blokkeren</string>
     <string name="sim">Sim-Kaarten</string>
     <string name="block_description">Blokkeer alle inkomende oproepen. Om nummers van contacten te blokkeren, moet u autorisatie geven.</string>
     <string name="sim_1">SIM 1</string>
@@ -53,27 +53,27 @@
     <string name="sim_2">SIM 2</string>
     <string name="sim_2_description">Sta alle oproepen toe van SIM 2.</string>
     <string name="extra">Meer Opties</string>
-    <string name="extra_contacts">Contact</string>
+    <string name="extra_contacts">Contacten</string>
     <string name="extra_contacts_description">Sta oproepen toe van telefoonnummers in uw contacten.</string>
-    <string name="extra_unknown_numbers">Onbekende cijfers</string>
-    <string name="extra_unknown_numbers_description">Sta oproepen toe van vreemden met een onderdrukt nummer.</string>
+    <string name="extra_unknown_numbers">Onbekende nummers</string>
+    <string name="extra_unknown_numbers_description">Sta oproepen van onbekende toe met een onderdrukt nummer.</string>
     <string name="extra_short_numbers">Korte nummers</string>
     <string name="extra_short_numbers_description">Sta oproepen toe van telefoonnummers met een lengte van 3 tot 5 cijfers.</string>
-    <string name="extra_plus_numbers">Plus cijfers</string>
+    <string name="extra_plus_numbers">Plus nummers</string>
     <string name="extra_plus_numbers_description">Blokkeer oproepen van telefoonnummers die beginnen met een plusteken.</string>
     <string name="extra_stir">STIR Oproepen</string>
     <string name="extra_stir_description">Sta telefoonnummers toe die de STIR-controle doorgeven.</string>
-    <string name="settings_controller">Controleur</string>
-    <string name="settings_controller_description">Hiermee kan de ontvanger van de uitzending stilte regelen met intentie.</string>
-    <string name="settings_disallow_call">Bellen blok</string>
+    <string name="settings_controller">Regelaar</string>
+    <string name="settings_controller_description">Uitzendontvanger inschakelen om Stilte met intenties te besturen.</string>
+    <string name="settings_disallow_call">Inkomende blokkeren</string>
     <string name="settings_disallow_call_description">Bepaal of de inkomende oproep moet worden geblokkeerd.</string>
-    <string name="settings_reject_call">Retfire -oproep</string>
-    <string name="settings_reject_call_description">Bepaalt of de inkomende oproep moet worden gescheiden alsof de gebruiker deze handmatig heeft afgewezen. Deze optie mag alleen worden geactiveerd als de oproep niet is goedgekeurd.</string>
+    <string name="settings_reject_call">Oproepen weigeren</string>
+    <string name="settings_reject_call_description">Stelt in of de inkomende oproep moet worden verbroken alsof de gebruiker deze handmatig heeft afgewezen. Dit mag alleen worden aangevinkt als de oproep is afgewezen.</string>
     <string name="settings_silence_call">Oproepen</string>
     <string name="app_name">Silence</string>
     <string name="contacted_answer">Antwoord</string>
     <string name="contacted_message">Bericht</string>
-    <string name="groups_main">Groep</string>
+    <string name="groups_main">Groepen</string>
     <string name="groups_description">Toestaan van telefoonnummers binnen de geselecteerde groepen.</string>
     <string name="groups_local">Lokaal</string>
     <string name="groups_local_description">Sta calls van getallen toe met hetzelfde landcode als die van u.</string>
