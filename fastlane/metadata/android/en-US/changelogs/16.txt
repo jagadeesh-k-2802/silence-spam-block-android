@@ -1,0 +1,1 @@
+fix rejection of contacts on Android 10, thanks ua Sad, @norrinr

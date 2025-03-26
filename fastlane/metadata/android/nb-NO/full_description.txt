@@ -1,0 +1,11 @@
+Som forvalg blokkeres telefonnumbre som ikke er lagret i kontaktlisten din.
+
+Alternativt tillat:
+* Nummer du har ringt
+* Gratisnummer (f.eks: 800)
+* Et tredje anrop fra samme nummer innen fem minutter
+* Mobilnummer fra tekstmeldinger midlertidig
+* Nummer som har bestått STIR-bekreftelse (Android 11)
+
+Hvis programmet avslår anrop fra kontakter på Android 10 kan kontakttilgang innvilges manuelt i
+programinfo → tilganger.

@@ -1,0 +1,4 @@
+Fügen Sie zusätzliche Einstellungen zur Beschreibung hinzu, danke uasad 
+Ukrainische Übersetzung hinzufügen, danke an Andrij Mizyk (@andmizyk)
+Aktualisierung der französischen Übersetzung, dank J. Lavoie (Edanas)
+Weblate-Workaround für String-Array hinzugefügt

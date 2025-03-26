@@ -1,0 +1,1 @@
+hacer que los interruptores sean desplazables, gracias Yuhui Su (@yuhuitech )

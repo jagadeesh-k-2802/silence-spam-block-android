@@ -1,0 +1,8 @@
+refresh ui (it required many internal changes, if you will find something broken please tell me)
+update Turkish, French, German, Italian translations
+
+Thanks to:
+Oğuz Ersen (@ersen0)
+@Ilithy
+Jean-Luc Tibaux (@eUgEntOptIc44)
+Giovanni Donisi (@gdonisi + @giovannidonisi)

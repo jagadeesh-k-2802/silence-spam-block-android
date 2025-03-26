@@ -1,0 +1,23 @@
+De forma predeterminada, los números que no están en tus contactos están bloqueados.
+
+Opcionalmente permitir:
+* Números con los que ha contactado
+* Números dentro de los grupos seleccionados
+* X llamadas registradas desde el mismo número en un número determinado de minutos
+* Números encontrados en los mensajes
+* y más ..
+
+Si la aplicación rechaza llamadas de contactos en Android 10, permite el permiso Contactos manualmente
+App info → Permisos.
+
+Permisos:
+* CALL_SCREENING - bloquear o permitir la llamada
+* READ_CALL_LOG - comprueba que has llamado/respondido el número y cuenta las veces que el número te ha llamado en X minutos
+* READ_SMS - comprobar que ha enviado un mensaje al número y que ha recibido un mensaje del número
+* NOTIFICATION_LISTENER - encontrar números móviles en los mensajes
+* READ_PHONE_STATE - comprobar en qué SIM está llamando el número
+* RECEIVE_BOOT_COMPLETED - persiste el trabajo limpio de números caducados a través de reinicios
+* READ_CONTACTS - comprobar el número existe en los contactos en Android 10 o bloquear llamadas de ellos
+
+Es software libre y de código abierto.
+Licencia: GPL-3
