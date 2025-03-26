@@ -33,7 +33,7 @@
     <string name="regex_pattern_allow_helper_text">Sta oproepen toe van nummers die overeenkomen met door komma gescheiden reguliere expressies.</string>
     <string name="regex_pattern_block_helper_text">Blokkeer oproepen van nummers die overeenkomen met door komma gescheiden reguliere expressies.</string>
     <string name="regex_pattern_error">"Ongeldige regex!"</string>
-    <string name="repeated_main">Herhaaldelijk</string>
+    <string name="repeated_main">Spam oproepen</string>
     <string name="repeated_description">X Sta geregistreerde oproepen uit hetzelfde nummer toe binnen een ingestelde tijd.</string>
     <string name="repeated_settings_description">Het nummer moet lager zijn dan de minuten. Aangezien Android het resultaat snijdt, moeten weergaven buiten het cache -interval liggen.</string>
     <string name="repeated_minutes">Minuut</string>
@@ -46,13 +46,13 @@
     <string name="messages_text_ttl_helper_text">Hoe lang je het nummer kunt bellen. Modificaties: dagen [d], uren [h], minuten [m]</string>
     <string name="messages_text_ttl_error">7 dagen / 48 uur / 120 minuten</string>
     <string name="block_main">Blok</string>
-    <string name="sim">Sim-karte</string>
+    <string name="sim">Sim-Kaarten</string>
     <string name="block_description">Blokkeer alle inkomende oproepen. Om nummers van contacten te blokkeren, moet u autorisatie geven.</string>
     <string name="sim_1">SIM 1</string>
     <string name="sim_1_description">Sta alle oproepen toe van SIM 1.</string>
     <string name="sim_2">SIM 2</string>
     <string name="sim_2_description">Sta alle oproepen toe van SIM 2.</string>
-    <string name="extra">Verder</string>
+    <string name="extra">Meer Opties</string>
     <string name="extra_contacts">Contact</string>
     <string name="extra_contacts_description">Sta oproepen toe van telefoonnummers in uw contacten.</string>
     <string name="extra_unknown_numbers">Onbekende cijfers</string>
@@ -61,7 +61,7 @@
     <string name="extra_short_numbers_description">Sta oproepen toe van telefoonnummers met een lengte van 3 tot 5 cijfers.</string>
     <string name="extra_plus_numbers">Plus cijfers</string>
     <string name="extra_plus_numbers_description">Blokkeer oproepen van telefoonnummers die beginnen met een plusteken.</string>
-    <string name="extra_stir">Roer/geschud</string>
+    <string name="extra_stir">STIR Oproepen</string>
     <string name="extra_stir_description">Sta telefoonnummers toe die de STIR-controle doorgeven.</string>
     <string name="settings_controller">Controleur</string>
     <string name="settings_controller_description">Hiermee kan de ontvanger van de uitzending stilte regelen met intentie.</string>
@@ -86,6 +86,6 @@
     <string name="block">Blokkeer</string>
     <string name="extra_description">Oproepen toestaan van bepaalde groepen/identifiers.</string>
     <string name="back">Terug</string>
-    <string name="toggle_off">Uit</string>
-    <string name="toggle_on">Op</string>
+    <string name="toggle_off">Uitgeschakeld</string>
+    <string name="toggle_on">Ingeschakeld</string>
 </resources>
