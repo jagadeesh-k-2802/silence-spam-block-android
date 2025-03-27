@@ -88,4 +88,8 @@
     <string name="back">Terug</string>
     <string name="toggle_off">Uitgeschakeld</string>
     <string name="toggle_on">Ingeschakeld</string>
+    <string name="enter_sms_message">SMS-bericht</string>
+    <string name="enter_sms_message_description">Voer het bericht in dat moet worden verzonden wanneer een oproep wordt geblokkeerd. Leeg laten om geen sms te verzenden.</string>
+    <string name="AlertTitle">Instellingen controleren</string>
+    <string name="AlertMessage">Je kunt in de instellingen instellen dat er een sms-bericht naar een geblokkeerd nummer wordt gestuurd wanneer dit nummer door de app wordt geblokkeerd.</string>
 </resources>

@@ -20,6 +20,7 @@ class Preferences(ctx: Context) {
         const val REPEATED_BURST_TIMEOUT = "repeated_burst_timeout"
         const val MESSAGES = "messages"
         const val MESSAGES_TEXT_TTL = "messages_text_ttl"
+        const val SMS_MESSAGE = "sms_message"
 
         const val RESPONSE_OPTIONS = "call_screening_response_options"
         const val UNKNOWN_NUMBERS_CHECKED = "unknown_numbers_checked"
@@ -36,9 +37,7 @@ class Preferences(ctx: Context) {
         // migration
         const val SERVICE_ENABLED = "service_enabled"
         const val GENERAL_UNKNOWN_NUMBERS_CHECKED = "general_unknown_numbers_checked"
-
         const val REGEX_PATTERN_ALLOW = "regex_pattern_allow"
-
         const val REGEX_PATTERN_BLOCK = "regex_pattern_block"
     }
 
@@ -137,6 +136,10 @@ class Preferences(ctx: Context) {
     var regexPatternBlock: String?
         get() = prefs.getString(REGEX_PATTERN_BLOCK, "")
         set(value) = prefs.edit { putString(REGEX_PATTERN_BLOCK, value) }
+
+    var smsMessage: String?
+        get() = prefs.getString(SMS_MESSAGE, "")
+        set(value) = prefs.edit { putString(SMS_MESSAGE, value) }
 }
 
 enum class Contact(val value: Int) {

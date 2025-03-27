@@ -13,6 +13,7 @@ Optionally allow:
 * Numbers you have contacted
 * Numbers within the selected groups
 * X registered call(s) from the same number within a set amount of minutes
+* SEND_SMS - send a message to the number if the call is rejected
 * Numbers found in messages
 * Numbers matching REGEX patterns
 * and more..

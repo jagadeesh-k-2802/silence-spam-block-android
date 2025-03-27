@@ -88,4 +88,8 @@
     <string name="back">Back</string>
     <string name="toggle_off">Off</string>
     <string name="toggle_on">On</string>
+    <string name="enter_sms_message">SMS Message</string>
+    <string name="enter_sms_message_description">Enter the message to send when a call is blocked. Leave empty to not send an SMS.</string>
+    <string name="AlertTitle">Check Settings</string>
+    <string name="AlertMessage">You can set up an SMS notification in settings to be sent to a blocked number when it would be blocked by the app.</string>
 </resources>
