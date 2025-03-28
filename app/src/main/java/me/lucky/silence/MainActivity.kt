@@ -55,8 +55,8 @@ open class MainActivity : ComponentActivity() {
                 if ((grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
                     // Show a dialog to check Settings
                     AlertDialog.Builder(this)
-                        .setTitle("Check Settings")
-                        .setMessage("You can set up an SMS notification in settings to be sent to a blocked number when it would be blocked by the app.")
+                        .setTitle(R.string.AlertTitle)
+                        .setMessage(R.string.AlertMessage)
                         .setPositiveButton("OK") { dialog, _ ->
                             // Dismiss the dialog when the OK button is clicked
                             dialog.dismiss()
