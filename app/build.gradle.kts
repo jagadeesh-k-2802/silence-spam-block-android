@@ -12,8 +12,8 @@ android {
         applicationId = "me.lucky.silence"
         minSdk = 29
         targetSdk = 34
-        versionCode = 52
-        versionName = "2.0.1"
+        versionCode = 53
+        versionName = "2.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
