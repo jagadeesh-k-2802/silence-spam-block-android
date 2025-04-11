@@ -89,6 +89,7 @@ fun MainScreen(
     onNavigateToExtra: () -> Unit,
     onNavigateToSettings: () -> Unit,
     onNavigateToRegex: () -> Unit,
+    onNavigateToTimer: () -> Unit,
 ) {
     fun getContactedPermissions(): Array<String> {
         val contacted = prefs.contacted
@@ -197,6 +198,11 @@ fun MainScreen(
             navigation = onNavigateToExtra,
         ),
         Module(
+            name = R.string.timer, 
+            description = R.string.timer_description, 
+            navigation = onNavigateToTimer, 
+        ),
+        Module(
             name = R.string.block_main,
             description = R.string.block_description,
             getPreference = { prefs.isBlockEnabled },
@@ -245,5 +251,6 @@ fun ModuleScreenPreview() {
         onNavigateToExtra = { navController.navigate(Route.EXTRA) },
         onNavigateToSettings = { navController.navigate(Route.SETTINGS) },
         onNavigateToRegex = { navController.navigate(Route.REGEX) },
+        onNavigateToTimer = { navController.navigate(Route.TIMER) },   
     )
 }

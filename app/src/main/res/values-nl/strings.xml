@@ -92,4 +92,14 @@
     <string name="enter_sms_message_description">Voer het bericht in dat moet worden verzonden wanneer een oproep wordt geblokkeerd. Leeg laten om geen sms te verzenden.</string>
     <string name="AlertTitle">Instellingen controleren</string>
     <string name="AlertMessage">Je kunt in de instellingen instellen dat er een sms-bericht naar een geblokkeerd nummer wordt gestuurd wanneer dit nummer door de app wordt geblokkeerd.</string>
+    <string name="timer">Timer</string>
+    <string name="timer_description">Timer schakelt de "stilte"-functie in of uit na de ingestelde duur.</string>
+    <string name="input_hours_label">Uren invoeren</string>
+    <string name="input_minutes_label">Voer minuten in</string>
+    <string name="start_timer_label">Timer starten</string>
+    <string name="timer_started_label">Timer gestart</string>
+    <string name="timer_done_app_on">Timer is klaar, app is aan!</string>
+    <string name="timer_done_app_off">De timer is klaar, de app is uit!</string>
+    <string name="cancel_timer_label">Timer annuleren</string>
+    <string name="remaining_time">%1$s over tot de timer afloopt</string>
 </resources>
