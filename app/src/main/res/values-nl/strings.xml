@@ -12,7 +12,7 @@
     <string name="notification_title">Geblokkeerde oproep</string>
     <string name="goto_button">Gaan naar</string>
     <string name="sim_description">Verwerk alle oproepen van één of beide SIM-kaarten.</string>
-    <string name="contacted_main">Herinneren</string>
+    <string name="contacted_main">Gecontacteerd</string>
     <string name="contacted_description">Sta oproepen toe van telefoonnummers die u hebt gebeld.</string>
     <string name="messages_main">Berichten</string>
     <string name="contacted_message_description">Sta oproepen toe waaraan u een bericht hebt verzonden.</string>
