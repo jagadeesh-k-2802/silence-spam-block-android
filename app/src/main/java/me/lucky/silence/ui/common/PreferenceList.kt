@@ -4,6 +4,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
@@ -25,7 +27,7 @@ data class Preference(
 
 @Composable
 fun PreferenceList(preferenceList: List<Preference>) {
-    Column(modifier = Modifier.padding(Dimension.LIST_PADDING)) {
+    Column(modifier = Modifier.padding(horizontal = Dimension.LIST_PADDING).verticalScroll(rememberScrollState())) {
         for (preference in preferenceList) {
             PreferenceItem(preference)
         }

@@ -1,6 +1,6 @@
 package me.lucky.silence.ui
 
-import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.OutlinedTextField
@@ -70,38 +70,36 @@ fun MessagesScreen(prefs: Preferences, onBackPressed: () -> Boolean) {
 
     Screen(title = R.string.messages_main, onBackPressed = onBackPressed) {
         PreferenceList(preferenceList)
-        Row(modifier = Modifier.padding(horizontal = 8.dp)) {
-            OutlinedTextField(
-                label = { Text(stringResource(R.string.messages_text_ttl_hint)) },
-                supportingText = { Text(supportingText) },
-                singleLine = true,
-                value = timeText,
-                isError = error,
-                onValueChange = { newValue ->
-                    if (!pattern.matcher(newValue).matches()) {
-                        error = true
-                        supportingText = errorHint
-                    } else {
-                        error = false
-                        supportingText = description
-                        val timeModifier = newValue.last()
-                        val i = newValue.dropLast(1).toInt()
-                        prefs.messagesTextTtl = when (timeModifier) {
-                            modifierDays -> i * 24 * 60
-                            modifierHours -> i * 60
-                            else -> i
-                        }
+        OutlinedTextField(
+            label = { Text(stringResource(R.string.messages_text_ttl_hint)) },
+            supportingText = { Text(supportingText) },
+            singleLine = true,
+            value = timeText,
+            isError = error,
+            onValueChange = { newValue ->
+                if (!pattern.matcher(newValue).matches()) {
+                    error = true
+                    supportingText = errorHint
+                } else {
+                    error = false
+                    supportingText = description
+                    val timeModifier = newValue.last()
+                    val i = newValue.dropLast(1).toInt()
+                    prefs.messagesTextTtl = when (timeModifier) {
+                        modifierDays -> i * 24 * 60
+                        modifierHours -> i * 60
+                        else -> i
                     }
-                    timeText = newValue
-                },
-                modifier = Modifier.weight(1f),
-                keyboardOptions = KeyboardOptions(
-                    keyboardType = KeyboardType.Ascii,
-                    autoCorrect = false,
-                    capitalization = KeyboardCapitalization.None
-                )
+                }
+                timeText = newValue
+            },
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
+            keyboardOptions = KeyboardOptions(
+                keyboardType = KeyboardType.Ascii,
+                autoCorrect = false,
+                capitalization = KeyboardCapitalization.None
             )
-        }
+        )
     }
 }
 

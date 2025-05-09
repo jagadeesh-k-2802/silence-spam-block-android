@@ -2,7 +2,9 @@ package me.lucky.silence.ui
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.platform.LocalContext
@@ -42,7 +44,7 @@ fun TimerScreen(prefs: Preferences, onBackPressed: () -> Boolean) {
 
     // Define Screen Composable
     Screen(title = R.string.timer, onBackPressed = onBackPressed) {
-        Column(modifier = Modifier.padding(horizontal = 8.dp)) {
+        Column(modifier = Modifier.padding(horizontal = 8.dp).verticalScroll(rememberScrollState())) {
             // Define OutlinedTextField for hours input
             OutlinedTextField(
                 value = hoursInput,

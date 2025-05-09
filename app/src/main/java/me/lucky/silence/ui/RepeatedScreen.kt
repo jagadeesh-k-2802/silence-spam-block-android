@@ -3,7 +3,9 @@ package me.lucky.silence.ui
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -29,7 +31,9 @@ fun RepeatedScreen(prefs: Preferences, onBackPressed: () -> Boolean) {
     var timeoutText by rememberSaveable { mutableStateOf(prefs.repeatedBurstTimeout.toString()) }
 
     Screen(title = R.string.repeated_main, onBackPressed = onBackPressed) {
-        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(Dimension.PADDING)) {
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(Dimension.PADDING).verticalScroll(
+            rememberScrollState()
+        )) {
             OutlinedTextField(
                 label = { Text(stringResource(R.string.repeated_count)) },
                 value = countText,
