@@ -1,6 +1,7 @@
 package me.lucky.silence
 
 import android.Manifest
+import android.app.Activity
 import android.app.AlertDialog
 import android.content.pm.PackageManager
 import android.os.Build
@@ -13,8 +14,12 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
+import androidx.compose.runtime.SideEffect
+import androidx.compose.ui.graphics.toArgb
+import androidx.compose.ui.platform.LocalView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.WindowCompat
 import androidx.navigation.compose.rememberNavController
 import me.lucky.silence.ui.App
 
@@ -32,12 +37,21 @@ open class MainActivity : ComponentActivity() {
         }
 
         setContent {
+            val view = LocalView.current
             val isAndroid12OrLater = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
+            val isDarkMode = isSystemInDarkTheme()
             val colorScheme = when {
-                isAndroid12OrLater && isSystemInDarkTheme() -> dynamicDarkColorScheme(this)
+                isAndroid12OrLater && isDarkMode -> dynamicDarkColorScheme(this)
                 isAndroid12OrLater -> dynamicLightColorScheme(this)
-                isSystemInDarkTheme() -> darkColorScheme()
+                isDarkMode -> darkColorScheme()
                 else -> lightColorScheme()
+            }
+            if (!view.isInEditMode) {
+                SideEffect {
+                    val window = (view.context as Activity).window
+                    window.statusBarColor = colorScheme.surface.toArgb()
+                    WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = !isDarkMode
+                }
             }
             MaterialTheme(colorScheme = colorScheme) {
                 App(ctx = this, navController = rememberNavController())
