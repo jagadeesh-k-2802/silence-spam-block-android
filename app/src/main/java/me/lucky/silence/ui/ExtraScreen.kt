@@ -37,11 +37,6 @@ fun ExtraScreen(prefs: Preferences, onBackPressed: () -> Boolean) {
             name = R.string.extra_short_numbers,
             description = R.string.extra_short_numbers_description,
         ), Preference(
-            getValue = { prefs.isUnknownNumbersChecked },
-            setValue = { isChecked -> prefs.isUnknownNumbersChecked = isChecked },
-            name = R.string.extra_unknown_numbers,
-            description = R.string.extra_unknown_numbers_description,
-        ), Preference(
             getValue = { prefs.isNotPlusNumbersChecked },
             setValue = { isChecked -> prefs.isNotPlusNumbersChecked = isChecked },
             name = R.string.extra_plus_numbers,
